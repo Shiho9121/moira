@@ -1,0 +1,46 @@
+@use "../../foundations/responsive" as *;
+
+.p-top-view {
+    background-image: url("../img/top/top-view.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80%;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+
+    @include mq(sm) {
+        background-image: url("../img/top/top-view-sp.png");
+        background-attachment: scroll;
+        background-position: center center;
+
+    }
+
+    &__text {
+
+        img {
+            width: 20vw;
+            margin-top: 150px;
+            margin-left: 5vw;
+
+            @include mq() {
+                width: 25vw;
+                margin-top: 10vh;
+            }
+
+            @include mq(sm) {
+                width: 50vw;
+                margin-top: 15vh;
+            }
+
+        }
+    }
+
+    &__button {
+        margin: 40px 0;
+    }
+
+}
+
+

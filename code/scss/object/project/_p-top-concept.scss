@@ -1,0 +1,26 @@
+@use "../../foundations/responsive" as *;
+
+.p-top-concept {
+    background-image: url("../img/top/top-concept-back-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__content {
+        flex-flow: column;
+    }
+
+    &__text {
+        order: 2;
+        padding-bottom: 5rem;
+
+        @include mq(sm) {
+            order: 1;
+            padding-bottom: 3rem;
+        }
+
+        & :last-child {
+            justify-content: flex-end;
+        }
+    }
+
+}

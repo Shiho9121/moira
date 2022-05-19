@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,noarchive">
+    <link rel="stylesheet" href="./css/foundations.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/object.css">
+    <title>Contact</title>
+</head>
+<body>
+    <!-- ローディング -->
+    <div class="p-loading">
+        <div class="p-loading__rhombus"></div>
+        <div class="p-loading__rhombus"></div>
+        <div class="p-loading__rhombus"></div>
+    </div>
+    
+    <!-- コンテンツ -->
+    <header class="l-header">
+        <div class="p-nav--header df">
+            <div class="p-logo">
+                <a href="./index.html">
+                    <img src="./img/icon/moira-icon.png" alt="moira-icon">
+                </a>
+            </div>
+            <nav>
+                <ul class="df">
+                    <li><a href="./index.html">Top</a></li>
+                    <li><a href="./concept.html">Concept</a></li>
+                    <li><a href="./products.html">Products</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+            <!-- スマホ表示 -->
+            <div class="p-header-sp">
+                <div class="p-logo--sp">
+                    <a href="./index.html">
+                        <img src="./img/icon/moira-icon.png" alt="moira-icon">
+                    </a>
+                </div>    
+                <div class="p-header-sp__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="p-header-sp__nav df">
+                     <ul class="">
+                        <li><a href="./index.html">Top</a></li>
+                        <li><a href="./concept.html">Concept</a></li>
+                        <li><a href="./products.html">Products</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>    
+                </nav>
+            </div>
+
+    </header>
+
+    <main>
+        <div class="p-contact l-wrapper l-wrapper--contact">
+            <div class="c-title c-title--contact">
+                <h2>Contact</h2>
+            </div>
+            <div>
+                <p>お気軽にお問い合わせください。</p>
+            </div>
+
+            <form action="">
+                <div class="p-contact__content">
+                    <h3>お名前</h3>
+                    <input type="text" placeholder="佐藤サトコ">
+                </div>
+                <div class="p-contact__content">
+                    <h3>メールアドレス</h3>
+                    <input type="mail" placeholder="mail@example.com">
+                </div>
+                <div class="p-contact__content">
+                    <h3>件名</h3>
+                    <input type="text" placeholder="件名をお書きください">
+                </div>
+                <div class="p-contact__content">
+                    <h3>内容</h3>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="c-button c-button--send">
+                    <input type="submit" value="送信">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="l-footer">
+        <div class="l-wrapper p-nav-footer df">
+            <nav>
+                <ul class="df">
+                    <li><a href="./index.html">Top</a></li>
+                    <li><a href="./concept.html">Concept</a></li>
+                    <li><a href="./products.html">Products</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="c-sns df">
+                <a href=""><img src="./img/icon/facebook.png" alt="facebook"></a>
+                <a href=""><img src="./img/icon/instagram.png" alt="instagram"></a>
+                <a href=""><img src="./img/icon/twitter.png" alt="twitter"></a>
+            </div>
+        </div>
+        <div class="p-copyright l-wrapper">
+            <small>&copy; 2022 Iwase Shiho</small>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./js/loading.js" type="text/javascript"></script>
+    <script src="./js/header-sp.js" type="text/javascript"></script>
+    <script src="./js/header-fixed.js" type="text/javascript"></script>
+</body>
+</html>

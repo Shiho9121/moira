@@ -1,0 +1,28 @@
+@use "../../foundations/responsive" as *;
+
+.c-arrow {
+    text-align: right;
+    padding-right: 4%;
+    cursor: pointer;
+    margin-top: 2.5rem;
+
+    @include mq(sm) {
+        margin-top: 2rem;
+    }
+
+    &__prev {
+        margin-right: 6.3rem;
+
+        @include mq() {
+            margin-right: 2.5rem;
+        }
+    }
+    
+    img {
+        width: 1rem;
+
+        @include mq() {
+            width: 0.5rem;
+        }
+    }
+}

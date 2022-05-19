@@ -1,0 +1,28 @@
+@use "../../foundations/responsive" as *;
+
+.c-sns {
+    width: 50%;
+    justify-content: flex-end;
+    margin: 2rem 0;
+
+    @include mq() {
+        width: 100%;
+        margin: 2rem 0 0;
+        justify-content: flex-start;
+    }
+
+    a {
+        img{
+            height: 1.5rem;
+
+            @include mq() {
+                height: 1rem;
+            }
+        }    
+    }
+
+    & :not(:last-of-type) {
+        margin-right: 2rem;
+    }
+
+}

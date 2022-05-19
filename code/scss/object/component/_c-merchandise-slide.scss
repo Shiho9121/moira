@@ -1,0 +1,24 @@
+@use "../../foundations/responsive" as *;
+
+.c-merchandise-slide {
+    max-width: 450px;
+    margin-bottom: 2%;
+
+    @include mq() {
+        max-width: 100%;
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+
+        @include mq() {
+            height: 471px;
+            object-fit: contain;
+        }
+        @include mq(sm) {
+            height: 218px;
+        }
+    }
+}

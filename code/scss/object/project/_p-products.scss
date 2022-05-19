@@ -1,0 +1,91 @@
+@use "../../foundations/responsive" as *;
+
+.p-products {
+
+    &__list {
+
+        > :nth-of-type(2) {
+            & :first-of-type {
+                order: 2;
+                margin-left: 2rem;
+
+                @include mq(sm) {
+                    order: 1;
+                    margin-left: 0;
+                }
+            }
+
+            & :last-of-type {
+                order: 1;
+                margin-left: 0;
+            }
+        }
+
+        &--box {
+            align-items: center;
+            padding-bottom: 4.5rem;
+
+            @include mq(sm) {
+                flex-wrap: wrap;
+                padding-bottom: 3rem;
+            }
+
+            &--text {
+                width: 50%;
+                margin-left: 2.5rem;
+
+                @include mq(sm) {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-top: 1rem;
+                }
+
+                h3 {
+                    font-size: 1.9rem;
+
+                    @include mq(sm) {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                p {
+                    margin: 1rem 0;
+                    line-height: 1.8;
+
+                    @include mq(sm) {
+                        font-size: 0.9rem;
+                        margin: 0.9rem 0; 
+                    }
+                }
+            }
+
+            &--img {
+                width: 50%;
+
+                @include mq(sm) {
+                    width: 100%;
+                    margin-left: 0;
+                }
+
+                img {
+                    width: 100%;
+                    border-radius: 3px;
+
+                    @include mq(sm) {
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+
+        &--button {
+            padding-top: 0.5rem;
+
+            @include mq(sm) {
+                text-align: end;
+            }
+        }
+
+    }
+
+}

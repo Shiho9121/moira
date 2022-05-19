@@ -1,0 +1,60 @@
+//component
+@use "./object/component/c-button" as *;
+@use "./object/component/c-title" as *;
+@use "./object/component/c-text" as *;
+@use "./object/component/c-sns" as *;
+@use "./object/component/c-slide" as *;
+@use "./object/component/c-arrow" as *;
+@use "./object/component/c-merchandise-slide" as *;
+@use "./object/component/c-merchandise-slide-nav" as *;
+@use "./object/component/c-scroll" as *;
+@use "./object/component/c-fade-in-bottom" as *;
+@use "./object/component/c-fade-in-right" as *;
+@use "./object/component/c-fade-in-left" as *;
+@use "./object/component/c-fade-in-left-products" as *;
+@use "./object/component/c-text-fade-in" as *;
+@use "./object/component/c-fade-up-img" as *;
+
+//project
+//loading
+@use "./object/project/p-loading" as *;
+
+//header
+@use "./object/project/p-nav" as *;
+@use "./object/project/p-header-sp" as *;
+@use "./object/project/p-header-scroll" as *;
+@use "./object/project/p-logo" as *;
+
+//footer
+@use "./object/project/p-copyright" as *;
+@use "./object/project/p-nav-footer" as *;
+
+//top
+@use "./object/project/p-top-view" as *;
+@use "./object/project/p-top-concept" as *;
+@use "./object/project/p-top-lineup" as *;
+@use "./object/project/p-top-contact" as *;
+
+//concept
+@use "./object/project/p-concept" as *;
+@use "./object/project/p-concept-img" as *;
+@use "./object/project/p-concept-text" as *;
+@use "./object/project/p-concept-point" as *;
+@use "./object/project/p-concept-lineup" as *;
+
+//products
+@use "./object/project/p-products" as *;
+
+//products-detail
+@use "./object/project/p-products-detail-merchandise" as *;
+@use "./object/project/p-products-detail-fregrance" as *;
+@use "./object/project/p-products-detail-point" as *;
+@use "./object/project/p-products-detail-connection" as *;
+
+//contact
+@use "./object/project/p-contact" as *;
+
+//utility
+@use "./object/utility/u-emmet" as *;
+@use "./object/utility/u-margin" as *;
+@use "./object/utility/u-padding" as *;

@@ -1,0 +1,120 @@
+@use "../../foundations/responsive" as *;
+
+.p-header-sp {
+    display: none;
+
+    @include mq() {
+        display: block;
+        position: fixed;
+        z-index: 100;
+    }
+
+    &__hamburger {
+        display : block;
+        position: fixed;
+        z-index : 3;
+        right : 13px;
+        top   : 10px;
+        width : 42px;
+        height: 42px;
+        cursor: pointer;
+        text-align: center;
+
+        span {
+            display : block;
+            position: absolute;
+            width   : 30px;
+            height  : 1px ;
+            left    : 6px;
+            background : #6A4C67;
+            -webkit-transition: 0.3s ease-in-out;
+            -moz-transition   : 0.3s ease-in-out;
+            transition        : 0.3s ease-in-out;
+
+            &:nth-child(1) {
+                top: 10px;
+            }
+            &:nth-child(2) {
+                top: 20px;
+            }
+            &:nth-child(3) {
+                top: 30px;
+            }
+
+        }
+
+        &.active {
+            span {
+                &:nth-child(1) {
+                    top : 16px;
+                    left: 6px;
+                    background :#fff;
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform   : rotate(-45deg);
+                    transform        : rotate(-45deg);
+                }
+
+                &:nth-child(2), &:nth-child(3) {
+                    top: 16px;
+                    background :#fff;
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform   : rotate(45deg);
+                    transform        : rotate(45deg);
+                }
+            }
+        } 
+    }
+
+    &__nav {
+        position: fixed;
+        z-index : 2;
+        top  : 0;
+        left : 0;
+        color: #fff;
+        background: linear-gradient(0deg, rgba(128,62,121,1) 0%, rgba(182,125,205,0.8015800070028012) 42%, rgba(250,191,224,0.7007396708683473) 100%);
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity .6s ease, visibility .6s ease;
+        visibility: hidden;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+
+        ul {
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+
+            li {
+                list-style-type: none;
+                padding: 0;
+                width: 100%;
+                transition: .4s all;
+
+                &:last-child {
+                    padding-bottom: 0;
+                }
+
+                // &:hover {
+                //     background :#ddd;
+                // }
+
+                a {
+                    display: block;
+                    color: #fff;
+                    padding-bottom: 3rem;
+                    text-decoration :none;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        &.active {
+            opacity: 100;
+            visibility: visible;
+        }
+    }
+}

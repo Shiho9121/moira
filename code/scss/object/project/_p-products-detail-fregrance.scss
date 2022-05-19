@@ -1,0 +1,51 @@
+@use "../../foundations/responsive" as *;
+
+.p-products-detail-fregrance {
+    &__explanation {
+        align-items: center;
+        padding-bottom: 5rem;
+        border-bottom: 1px solid #D6D6D6;
+
+        @include mq() {
+            flex-wrap: wrap;
+        }
+
+        @include mq() {
+            padding-bottom: 3rem;
+        }
+    }
+
+    &__text {
+        margin-right: 5%;
+        line-height: 2;
+
+        @include mq() {
+            margin-right: 0;
+            order: 2;
+            margin-top: 1rem;
+        }
+
+        p {
+            @include mq() {
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    &__img {
+        @include mq() {
+            width: 100%;
+        }
+        img {
+            max-width: 500px;
+            border-radius: 3px;
+
+            @include mq() {
+                max-width: 100%;
+                width: 100%;
+                height: 261px;
+                object-fit: cover;
+            }
+        }
+    }
+}

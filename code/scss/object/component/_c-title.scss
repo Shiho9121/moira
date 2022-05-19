@@ -1,0 +1,60 @@
+@use "../../foundations/responsive" as *;
+
+.c-title {
+    margin-top: 5rem;
+    font-size: 3.8rem;
+
+    @include mq() {
+        font-size: 3rem;
+    }
+    @include mq(sm) {
+        margin-top: 3rem;;
+        font-size: 1.5rem;
+    }    
+
+    &--top-contact {
+        margin-top: 0;
+        padding-bottom: 30px;
+
+        @include mq() {
+            padding-bottom: 2rem;
+        }
+    }
+
+    &--concept, &--products {
+        display: inline-block;
+        margin: 150px 0 5rem 0;
+
+        @include mq(sm) {
+            margin: 0;
+            padding: 5.8rem 0 2rem;
+        }
+    }
+
+    &--concept-point, &--products-detail-point {
+        margin-bottom: 3rem;
+        text-align: center;
+
+        @include mq(sm) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &--products-detail-fregrance, &--products-detail-connection {
+        margin-bottom: 3rem;
+
+        @include mq(sm) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &--contact {
+        display: inline-block;
+        margin: 150px 0 1rem 0;
+
+        @include mq(sm) {
+            margin: 0;
+            padding: 5.8rem 0 2rem;
+        }
+    }
+}

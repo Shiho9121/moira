@@ -1,0 +1,60 @@
+@use "../../foundations/responsive" as *;
+
+.p-nav-footer {
+        @include mq() {
+            flex-wrap: wrap;
+        }
+
+        nav {
+            width: 50%;
+
+            @include mq() {
+                width: 100%;
+                order: 2;
+            }
+
+            ul {
+                justify-content: flex-start;
+                margin: 2rem 0;
+
+                @include mq() {
+                    font-size: 0.8rem;
+                }
+
+                li {
+                    &:not(:first-of-type) {
+                        margin-left: 2rem;
+                    }
+
+                    a {
+                        position: relative;
+                        display: inline-block;
+                        text-decoration: none;
+
+                        &::after {
+                            position: absolute;
+                            bottom: -4px;
+                            left: 0;
+                            content: '';
+                            width: 100%;
+                            height: .5px;
+                            background: #fff;
+                            transform: scale(0, 1);
+                            transform-origin: right top;
+                            transition: transform .3s;
+                        }
+
+                        &:hover {
+                            &::after {
+                                transform-origin: left top;
+                                transform: scale(1, 1);
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+}

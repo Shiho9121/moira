@@ -1,0 +1,10 @@
+@use "../../foundations/responsive" as *;
+
+.p-copyright {
+    text-align: end;
+    padding-bottom: 2rem;
+
+    @include mq(sm) {
+        text-align: start;
+    }
+}

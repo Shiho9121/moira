@@ -1,0 +1,27 @@
+@use "../../foundations/responsive" as *;
+
+.p-top-contact {
+    background-image: url("../img/webp/top/top-contact-back-img.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 0;
+
+    @include mq(sm) {
+        padding: 3rem 0;
+    }
+
+    &__content {
+        text-align: center;
+
+        &--back {
+            background-color: rgba(255,255,255,0.7);
+            padding: 2rem 0;
+            border-radius: 6px;
+            box-shadow: 0 0px 20px rgba(0,0,0,0.2);
+
+            & :last-child {
+                justify-content: center;
+            }    
+        }
+    }
+}

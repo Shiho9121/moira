@@ -1,0 +1,31 @@
+@use "../../foundations/responsive" as *;
+
+.p-products-detail-connection {
+    padding-bottom: 5rem;
+
+    @include mq(sm) {
+        padding-bottom: 2rem;
+    }
+
+    &__img {
+        text-align: center;
+
+        @include mq(sm) {
+            text-align: start;
+        }
+
+        img {
+            width: 250px;
+            margin-bottom: 1rem;
+            border-radius: 6px;
+
+            @include mq(sm) {
+                width: 100%;
+            }
+        }
+
+        &:first-of-type {
+            margin-right: 2rem;
+        }
+    }
+}

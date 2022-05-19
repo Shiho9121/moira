@@ -1,0 +1,29 @@
+@use "../../foundations/responsive" as *;
+
+.c-merchandise-slide-nav {
+    max-width: 600px;
+    max-height: 200px;
+
+    @include mq() {
+        max-width: 100%;
+    }
+
+    img {
+        height: 150px;
+        object-fit: cover;
+        border-radius: 6px;
+        cursor: pointer;
+
+        @include mq() {
+            height: 155px;
+        }
+        @include mq(sm) {
+            height: 104px;
+        }
+
+        &:not(:last-of-type) {
+            margin-right: 0.5%;
+            object-fit: contain;
+        }
+    }
+}

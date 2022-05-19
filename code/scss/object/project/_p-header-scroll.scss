@@ -1,0 +1,13 @@
+.p-header-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    transition: .3s;
+    transform: translateY(-100%);
+
+    &--show {
+        transform: translateY(0);
+    }
+}

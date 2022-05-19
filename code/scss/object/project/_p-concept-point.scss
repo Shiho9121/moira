@@ -1,0 +1,66 @@
+@use "../../foundations/responsive" as *;
+
+.p-concept-point {
+    &__content {
+        justify-content: center;
+        padding-bottom: 5rem;
+        border-bottom: 1px solid #D6D6D6;
+
+        @include mq(sm) {
+            padding-bottom: 0;
+            flex-wrap: wrap;
+            padding-bottom: 0;
+        }
+
+        > :not(:first-of-type) {
+            margin-left: 2rem;
+
+            @include mq(sm) {
+                margin-left: 0;
+            }
+        }
+
+        &--box {
+            width: calc(1100px / 3 - 64px);
+
+            @include mq(sm) {
+                width: 100%;
+                margin-bottom: 3rem;
+            }
+
+            &--img {
+                img {
+                    width: 100%;
+                    border-radius: 3px;
+
+                    @include mq(sm) {
+                        height: 196px;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            &--text {
+                h3 {
+                    font-size: 1.4rem;
+                    margin: 1.5rem 0;
+
+                    @include mq(sm) {
+                        font-size: 1.2rem;
+                        margin: 1rem 0;
+                    }
+                }
+
+                p {
+                    line-height: 2;
+
+                    @include mq(sm) {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        
+        }
+    }
+
+}
