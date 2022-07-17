@@ -81,27 +81,18 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-
-
         ul {
             margin: 0 auto;
             padding: 0;
             width: 100%;
-
             li {
                 list-style-type: none;
                 padding: 0;
                 width: 100%;
                 transition: .4s all;
-
                 &:last-child {
                     padding-bottom: 0;
                 }
-
-                // &:hover {
-                //     background :#ddd;
-                // }
-
                 a {
                     display: block;
                     color: #fff;
@@ -111,10 +102,12 @@
                 }
             }
         }
-
         &.active {
             opacity: 100;
             visibility: visible;
         }
+    }
+    &--fixed-scroll {
+        overflow: hidden;
     }
 }

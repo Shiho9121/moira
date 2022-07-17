@@ -33,9 +33,6 @@
             width: 302px;
 
             @include mq() {
-                // top: 50%;
-                // height: 9em;
-                // width: 38.2%;
                 display: none;
             }
         }
